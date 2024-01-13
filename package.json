@@ -1,6 +1,6 @@
 {
   "name": "gio-react-native-openai",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "main": "index.ts",
   "type": "module",
   "description": "Open AI functions for react native",
