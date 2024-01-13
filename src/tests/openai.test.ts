@@ -1,10 +1,10 @@
 import { eQuality } from "../enums/eQuality";
 import { eModel } from "../enums/eModel";
-import OpenAI from "../openai/OpenAI";
 import { eResponseFormat } from "../enums/eResponseFormat";
 import { eSize } from "../enums/eSize";
 import { eStyle } from "../enums/eStyle";
 import HttpInterceptor from "../httpInterceptor";
+import { OpenAI } from "../openai/OpenAI";
 
 
 jest.mock('../httpInterceptor', () => {

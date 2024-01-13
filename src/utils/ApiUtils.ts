@@ -1,6 +1,6 @@
-export const createHeaders = (apiKey: string) => {
+export const createHeaders = (apiKey: string, organization: string) => {
     return {
         Authorization: `Bearer ${apiKey}`,
-        'OpenAI-Organization': 'sua-organizacao-aqui',
+        'OpenAI-Organization': organization,
     };
 };

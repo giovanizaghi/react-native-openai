@@ -1,11 +1,12 @@
 {
-  "name": "react-native-openai",
-  "version": "1.0.0",
+  "name": "gio-react-native-openai",
+  "version": "0.0.12",
+  "main": "index.ts",
   "type": "module",
   "description": "Open AI functions for react native",
-  "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",

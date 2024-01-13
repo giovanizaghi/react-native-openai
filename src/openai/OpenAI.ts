@@ -1,7 +1,7 @@
 import Images from "./Images";
 import HttpInterceptor from "../httpInterceptor";
 
-class OpenAI {
+export class OpenAI {
     private baseURL: HttpInterceptor;
     public images: Images;
 
@@ -17,5 +17,3 @@ class OpenAI {
       }
 
 }
-
-export default OpenAI;
