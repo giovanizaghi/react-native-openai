@@ -7,7 +7,7 @@ class HttpInterceptor {
   constructor(apiKey: string, organization: string) {
     this.instance = axios.create({
       baseURL: 'https://api.openai.com/v1',
-      timeout: 5000,
+      timeout: 120000,
     });
 
     this.instance.interceptors.request.use(
