@@ -8,8 +8,8 @@ import { OpenAI } from "../openai/OpenAI";
 
 describe('OpenAI', () => {
     let openAI: OpenAI;
-    const mockApiKey = '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';
-    const mockOrganization = 'org-xDgkNCcBtmEluQvm2CxofvV1';
+    const mockApiKey = 'mock-api-key';
+    const mockOrganization = 'mock-org';
 
     beforeEach(() => {
         openAI = new OpenAI(mockApiKey, mockOrganization);
