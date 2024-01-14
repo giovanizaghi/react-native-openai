@@ -30,7 +30,7 @@ export default interface IImages {
         size?: eSize,
         style?: eStyle,
         user?: string,
-    ) => Promise<ImagesModule.ImageResponse>;
+    ) => Promise<ImagesModule.ImageResponse[]>;
 
     /**
     * Creates an edited or extended image given an original image and a prompt.
@@ -86,8 +86,7 @@ export module ImagesModule {
      * Interface for the response object containing information about generated images.
      */
     export interface ImageResponse {
-        created: number,
-        data: ImageData[]
+        url: string,
     }
     /**
          * Interface for the data object within the image response.

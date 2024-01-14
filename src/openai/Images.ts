@@ -22,7 +22,7 @@ class Images implements IImages {
         size: eSize = eSize._1024x1024,
         style: eStyle = eStyle.vivid,
         user: string = "",
-    ): Promise<ImagesModule.ImageResponse> {
+    ): Promise<ImagesModule.ImageResponse[]> {
 
         try {
             if (model === eModel.DallE2) {
@@ -57,7 +57,7 @@ class Images implements IImages {
                 console.warn("It's recommended to use the param 'user', this can help OpenAI to monitor and detect abuse.");
             }
 
-            const { data } = await this.baseURL.post<ImagesModule.ImageResponse>("images/generations", {
+            const { data } = await this.baseURL.post<ImagesModule.ImageResponse[]>("images/generations", {
                 prompt,
                 model,
                 n,
